@@ -1,0 +1,164 @@
+/*@media only screen and (max-width: 480px) {
+    body { width: 30%; }
+}
+@media only screen and (min-width: 481px) {
+    body { width: 60%; }
+}
+@media only screen and (min-width: 1024px) {
+    body { width: 100%;}
+}*/
+/**{
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+  margin: 0;
+  background-color: #FFFFFF;
+}
+[class*="col-"] {
+  width: 100%;
+}*/
+
+  /* For tablets: */
+/*@media only screen and (min-width: 600px) {
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}*/
+
+  /*for desktops*/
+/*@media only screen and (min-width: 768px){
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}*/
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+a:link    {color:#010101;}  /* unvisited link  */
+a:visited {color:#010101;}  /* visited link    */
+a:hover   {color:#3967FE; text-decoration: underline; !important}  /* mouse over link */
+a:active  {color:#000;}  /* selected link   */
+
+.parallax {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/main_pic.webp");
+    min-height: 40em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax_text{
+  position: relative;
+  /*box-sizing: content-box;*/
+  top: 13.333em;
+  max-width: 50em;
+  margin: 0px auto;
+}
+
+@font-face {
+    font-family: Brandon_light;
+    src: url("fonts/Brandon_light.otf") format("opentype");
+}
+
+.parallax_text h3{
+    font-family: Brandon_light;
+    font-weight: 100;
+    font-size: 32px;
+    margin: 0px;
+}
+
+@media only screen and (max-width: 600px){
+  .parallax_text h3{
+    font-size: 1.5em;
+  }
+  #desc_animate h4{
+    font-size: 1.0em;
+  }
+
+}
+
+#text_animate{
+  white-space: nowrap;
+  overflow: hidden;
+  animation: type 4s linear 0s alternate;
+}
+
+@keyframes type{
+  from { width: 0; }
+  to {width: 60%;}
+}
+
+#desc_animate h4{
+  position: absolute;
+  left: 0.2rem;
+  top: 5rem;
+  opacity: 0;
+  animation: type2 5s ;
+  animation-fill-mode: forwards;
+  /*animation-name: type2;
+  animation-duration: 5s;*/
+
+}
+@keyframes type2{
+  0% {
+    position: absolute;
+    top: -3rem;
+    opacity: 0;
+  }
+
+  100% {
+    position: absolute;
+    top: 10rem;
+    opacity: 1;
+  }
+
+}
+
+@media only screen and (min-width: 1500px){
+  .skills{
+    padding-left: 13em;
+    padding-right: 13em;
+  }
+}
+
+/*.header{
+  margin: 0px 10rem;
+}*/
+
+.border {
+    display: block;
+    height: 1px;
+    border: 0;
+    background-color: #E1E2E3;
+    margin: 4em 0;
+    padding: 0;
+}
+
+.navbar-nav a{
+  margin: 0px 2rem;
+}
